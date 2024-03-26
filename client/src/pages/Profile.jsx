@@ -83,7 +83,7 @@ export default function Profile() {
   };
 
 
-   return (
+  return (
     <div className='p-3 max-w-lg mx-auto'>
       <h1 className='text-3xl font-semibold text-center my-7'>Profile</h1>
       <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
@@ -110,7 +110,9 @@ export default function Profile() {
           ) : filePerc === 100 ? (
             <span className='text-green-700'>Image successfully uploaded!</span>
           ) : (
-	@@ -83,29 +119,42 @@
+            ''
+          )}
+        </p>
         <input
           type='text'
           placeholder='username'
